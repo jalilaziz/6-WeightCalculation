@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Weight Calculation</title>
+</head>
+<body>
+  <div id="all">
+    <div id="container">
+      <input type="number" id="inputheight" placeholder="170cm"><br>
+      <input type="number" id="inputage" placeholder="20 ans"><br>
+      <div style="display: flex;justify-items: center;align-items: center;margin:0px;height:20px;">
+        <p>Vous êtes:</p>
+        <input type="checkbox" id="mince">
+          <label for="value">Mince</label>
+        <input type="checkbox" id="moyen">
+          <label for="value">Moyen</label>
+        <input type="checkbox" id="large">
+          <label for="value">Large</label>
+      </div>
+      <!-- <select name="select" id="select">
+        <option value="">Select a number</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select> -->
+      
+      <button id="btnresult" onclick="result()">CALCULER</button>
+    </div>
+    <p id="result" style="font-size:larger;">Resultat:<br></p>
+    <div class="history">
+      <button id="cleardata" onclick="clearData()">Supprimer Data</button>
+      <button id="clear" onclick="clearSession()">Supprimer Session</button>
+      <p style="font-size: large;">Historique:</p>
+      <p id="history" style="font-size: large;padding-left: 20px;"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
